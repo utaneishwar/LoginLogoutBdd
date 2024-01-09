@@ -29,6 +29,7 @@ public class Login extends BaseData
 		String idOfUser = jp.getString("userId");
 		userID   =idOfUser;
 		System.out.println(idOfUser);
+		
 		String	tokenvalue=jp.getString("token");
 		tokenid=tokenvalue;
 		System.out.println(tokenvalue);

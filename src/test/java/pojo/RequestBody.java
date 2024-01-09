@@ -2,6 +2,7 @@ package pojo;
 
 public class RequestBody 
 {   // pojo class of request body to create new user 
+	
 	Integer id;
 	String username;
 	String  firstName;

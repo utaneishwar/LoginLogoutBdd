@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="serealizationAndDeserealization.Get_ListUser">
+      <class name="ishwar.FetchDataByusingJsonClass">
         <methods>
-          <include name="getdeatil"/>
+          <include name="usercreate"/>
         </methods>
-      </class> <!-- serealizationAndDeserealization.Get_ListUser -->
+      </class> <!-- ishwar.FetchDataByusingJsonClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

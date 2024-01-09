@@ -24,34 +24,29 @@ public class AddProduct_intoApp extends BasicData
 
 		RestAssured.baseURI = "https://rahulshettyacademy.com";
 
-		Response response = given()
+Response response = given()
+					.header("Authorization", tokenid)
 
-				.header("Authorization", tokenid)
+			    	.param("productName", "Party wear Jeans")
+			    	.param("productAddedBy", userId)
+			    	.param("productCategory", "fashion")
+			    	.param("productSubCategory", "Trouser")
+			    	.param("productPrice", "2000")
+			    	.param("productDescription", "Levis Jeans")
+			    	.param("productFor", "Women")
+			    	.multiPart("productImage", file)      // this method used for upload the file 
 
-				.param("productName", "Party wear Jeans")
-				.param("productAddedBy", userId)
-				.param("productCategory", "fashion")
-				.param("productSubCategory", "Trouser")
-				.param("productPrice", "2000")
-				.param("productDescription", "Levis Jeans")
-				.param("productFor", "Women")
-				.multiPart("productImage", file)      // this method used for upload the file 
-
-				.when()
-
-				.post("/api/ecom/product/add-product")
-
-				.then()
-
-				.log().all()
-
-				.extract()
-
-				.response();
+			    	.when()
+			    	.post("/api/ecom/product/add-product")
+			    	.then()
+			    	.log().all()
+			    	.extract()
+			    	.response();
 
 		JsonPath jp = response.jsonPath();
 
 		productId = jp.getString("productId");
+		System.out.println(productId);
 
 	}
 }

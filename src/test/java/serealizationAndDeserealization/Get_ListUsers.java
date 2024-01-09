@@ -47,9 +47,9 @@ public class Get_ListUsers {
 		//	WAP to fetch the third id value from the json response
 
 		List<Data> datavalue = responseBody.getData();  // 
-		Integer idvalue = datavalue.get(3).getId();
+		Integer idvalue = datavalue.get(1).getId();
 		System.out.println(idvalue);                    // 10
-		
+		                     
 		
 
 

@@ -12,31 +12,23 @@ public class Place_order extends BasicData
 	{
 		RestAssured.baseURI = "https://www.rahulshettyacademy.com";
 
-		given()
+							 given()
+							.header("Authorization", tokenid)
+							.header("Content-Type", "application/json")
+							.body("{\"orders\": [\r\n"
+									+ "        {\r\n"
+									+ "        \"country\": \"India\", \r\n"
+									+ "        \"productOrderedId\" : \""+productId+"\"\r\n"
+									+ "        }\r\n"
+									+ "    ]\r\n"
+									+ "}")
 
-		.header("Authorization", tokenid)
-
-		.header("Content-Type", "application/json")
-
-		.body("{\"orders\": [\r\n"
-				+ "        {\r\n"
-				+ "        \"country\": \"India\", \r\n"
-				+ "        \"productOrderedId\" : \""+productId+"\"\r\n"
-				+ "        }\r\n"
-				+ "    ]\r\n"
-				+ "}")
-
-		.when()
-
-		.post("/api/ecom/order/create-order")
-
-		.then()
-
-		.log().all()
-
-		.extract()
-
-		.response();
+							.when()
+							.post("/api/ecom/order/create-order")
+							.then()
+							.log().all()
+							.extract()
+							.response();
 	}
 
 }

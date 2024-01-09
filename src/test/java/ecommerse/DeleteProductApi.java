@@ -11,15 +11,15 @@ public class DeleteProductApi extends BaseData
 	public void delete_Product()
 	{
 		RestAssured.baseURI="https://rahulshettyacademy.com/";
-		given()
-		.header("Authorization",tokenid)
-		.pathParam("prdid", productID)
-		.when()
-		.delete("api/ecom/product/delete-product/{prdid}")
-		.then()
-		.log().all()
-		.extract()
-		.response();
+		                      given()
+		                      .header("Authorization",tokenid)
+		                      .pathParam("prdid", productID)
+		                      .when()
+		                      .delete("api/ecom/product/delete-product/{prdid}")
+		                      .then()
+		                      .log().all()
+		                      .extract()
+		                      .response();
 		
 
 	}

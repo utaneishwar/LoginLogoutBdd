@@ -9,16 +9,16 @@ public class Delete_Api extends BasicData
 	@Test
 	public void delete_product()
 	{
-		RestAssured.baseURI="https://www.rahulshettyacademy.com";
-		given()
-		.header("Authorization", tokenid)
-		.pathParam("prdid", productId)
-		.when()
-		.delete("/api/ecom/product/delete-product/{prdid}")
-		.then()
-		.log().all()
-		.extract()
-		.response();
+		  RestAssured.baseURI="https://www.rahulshettyacademy.com";
+		                      given()
+		                     .header("Authorization", tokenid)
+		                     .pathParam("prdid", productId)
+		                     .when()
+		                     .delete("/api/ecom/product/delete-product/{prdid}")
+		                     .then()
+		                     .log().all()
+		                     .extract()
+		                     .response();
 
 
 
