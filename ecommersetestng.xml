@@ -5,8 +5,9 @@
     <classes>
        <class name="ecommerse.Login"/>
       <class name="ecommerse.AddProductInEcommerse"/>
-      <class name="ecommerse.PlaceOrderEcommerse"></class>
-      <class name="ecommerse.DeleteProductApi"></class>
+      <class name="ecommerse.PlaceOrderEcommerse"/>
+      <class name="ecommerse.OrderDeleteFromOrder"/>
+       <class name="ecommerse.DeleteProductApi"></class>
       </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

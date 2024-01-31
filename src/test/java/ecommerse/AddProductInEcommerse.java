@@ -1,14 +1,15 @@
 package ecommerse;
 
+
+
+import java.io.File;
+
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
+import static io.restassured.RestAssured.*;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-
-import static io.restassured.RestAssured.*;
-
-import java.io.File;
 
 public class AddProductInEcommerse extends  BaseData
 {
@@ -24,8 +25,9 @@ public class AddProductInEcommerse extends  BaseData
 				
 		Response resp = given()
 		
-		.header("Authorization",tokenid)
-		
+//		.header("Authorization","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTZhZjE3ZDlmZDk5Yzg1ZThkZGFlMGMiLCJ1c2VyRW1haWwiOiJrdW5hbGJodXNhcmlAZ21haWwuY29tIiwidXNlck1vYmlsZSI6ODc4ODU4NDYxMSwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTcwNjYxMTEwNCwiZXhwIjoxNzM4MTY4NzA0fQ.sG8E1le-U4tqGMuQkF_I245S3p5sEAed27lMhB1IIqA\r\n"
+//				+ "")
+		.headers("Authorization",tokenid)
 		
 		
 		.param("productName", "party wear shirt")
@@ -40,7 +42,7 @@ public class AddProductInEcommerse extends  BaseData
 		.when()
 		.post("api/ecom/product/add-product")
 		.then()
-		.log().all()
+	//	.log().all()
 		.extract()
 		.response();
 		
@@ -49,7 +51,8 @@ public class AddProductInEcommerse extends  BaseData
 		
 		System.out.println(productID);
 		String message = jp.getString("message");
-     	System.out.println(message);
+		System.out.println(message);
+		System.out.println("**********");
 		
 		 
 	}

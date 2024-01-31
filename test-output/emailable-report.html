@@ -8,12 +8,28 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">2,994</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">4,975</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">ishwar.FetchDataByusingJsonClass</td><td><a href="#m0">checkcopiesofcypress</a></td><td rowspan="1">1704800079738</td><td rowspan="1">210</td></tr><tr class="passedeven"><td><a href="#m1">usercreate</a></td><td rowspan="1">1704800077003</td><td rowspan="1">2727</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ecommerse.OrderDeleteFromOrder</td><td><a href="#m0">deleteOrder</a></td><td rowspan="1">1706698457836</td><td rowspan="1">9</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">ecommerse.AddProductInEcommerse</td><td><a href="#m1">add_Product</a></td><td rowspan="1">1706698456511</td><td rowspan="1">812</td></tr><tr class="passedodd"><td rowspan="1">ecommerse.DeleteProductApi</td><td><a href="#m2">delete_Product</a></td><td rowspan="1">1706698457856</td><td rowspan="1">321</td></tr><tr class="passedeven"><td rowspan="1">ecommerse.Login</td><td><a href="#m3">logintoApp</a></td><td rowspan="1">1706698453235</td><td rowspan="1">3255</td></tr><tr class="passedodd"><td rowspan="1">ecommerse.PlaceOrderEcommerse</td><td><a href="#m4">PlaceOrder</a></td><td rowspan="1">1706698457327</td><td rowspan="1">501</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">ishwar.FetchDataByusingJsonClass#checkcopiesofcypress</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">ishwar.FetchDataByusingJsonClass#usercreate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">ecommerse.OrderDeleteFromOrder#deleteOrder</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: parameterValue cannot be null
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
+	at ecommerse.OrderDeleteFromOrder.deleteOrder(OrderDeleteFromOrder.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">ecommerse.AddProductInEcommerse#add_Product</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">ecommerse.DeleteProductApi#delete_Product</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">ecommerse.Login#logintoApp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">ecommerse.PlaceOrderEcommerse#PlaceOrder</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

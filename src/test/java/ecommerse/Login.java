@@ -17,8 +17,8 @@ public class Login extends BaseData
 
 				.header("Content-Type", "application/json")
 				.body("{\r\n"
-						+ "\"userEmail\":\"adityutane@gmail.com\",\r\n"
-						+ "\"userPassword\":\"Pass@123\"\r\n"
+						+ "    \"userEmail\": \"kunalbhusari@gmail.com\",\r\n"
+						+ "    \"userPassword\": \"Test@1234\"\r\n"
 						+ "}")
 				.when()
 				.post("/api/ecom/auth/login")
@@ -27,12 +27,16 @@ public class Login extends BaseData
 				.response();
 		JsonPath jp = resp.jsonPath();
 		String idOfUser = jp.getString("userId");
-		userID   =idOfUser;
+		userID =idOfUser;
 		System.out.println(idOfUser);
 		
-		String	tokenvalue=jp.getString("token");
+		 String	tokenvalue=jp.getString("token");
 		tokenid=tokenvalue;
 		System.out.println(tokenvalue);
+		 String messagetext = jp.getString("message");
+		 message=messagetext;
+		 System.out.println(messagetext);
+		 System.out.println("**************");
 
 
 	}
