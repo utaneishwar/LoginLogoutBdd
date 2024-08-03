@@ -19,10 +19,6 @@ public class Delete_Api extends BasicData
 		                     .log().all()
 		                     .extract()
 		                     .response();
-
-
-
-
 	}
 
 }

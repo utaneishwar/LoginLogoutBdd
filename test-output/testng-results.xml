@@ -1,96 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-31T16:24:13 IST" name="Suite" finished-at="2024-01-31T16:24:18 IST" duration-ms="4975">
+  <suite started-at="2024-08-03T18:27:24 IST" name="Suite" finished-at="2024-08-03T18:30:03 IST" duration-ms="158826">
     <groups>
     </groups>
-    <test started-at="2024-01-31T16:24:13 IST" name="Test" finished-at="2024-01-31T16:24:18 IST" duration-ms="4975">
-      <class name="ecommerse.Login">
-        <test-method signature="logintoApp()[pri:0, instance:ecommerse.Login@fba92d3]" started-at="2024-01-31T16:24:13 IST" name="logintoApp" finished-at="2024-01-31T16:24:16 IST" duration-ms="3255" status="PASS">
+    <test started-at="2024-08-03T18:27:24 IST" name="Test" finished-at="2024-08-03T18:30:03 IST" duration-ms="158826">
+      <class name="book_store_api.GenerateTokenOfUser">
+        <test-method signature="GenerateToken()[pri:0, instance:book_store_api.GenerateTokenOfUser@6da21078]" started-at="2024-08-03T18:27:51 IST" name="GenerateToken" finished-at="2024-08-03T18:28:13 IST" duration-ms="22493" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintoApp -->
-      </class> <!-- ecommerse.Login -->
-      <class name="ecommerse.OrderDeleteFromOrder">
-        <test-method signature="deleteOrder()[pri:0, instance:ecommerse.OrderDeleteFromOrder@28f2a10f]" started-at="2024-01-31T16:24:17 IST" name="deleteOrder" finished-at="2024-01-31T16:24:17 IST" duration-ms="9" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[parameterValue cannot be null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: parameterValue cannot be null
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
-at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
-at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
-at ecommerse.OrderDeleteFromOrder.deleteOrder(OrderDeleteFromOrder.java:22)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+        </test-method> <!-- GenerateToken -->
+      </class> <!-- book_store_api.GenerateTokenOfUser -->
+      <class name="book_store_api.Create_user_bookstore">
+        <test-method signature="create_user()[pri:0, instance:book_store_api.Create_user_bookstore@2a54a73f]" started-at="2024-08-03T18:27:24 IST" name="create_user" finished-at="2024-08-03T18:27:51 IST" duration-ms="26489" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteOrder -->
-      </class> <!-- ecommerse.OrderDeleteFromOrder -->
-      <class name="ecommerse.AddProductInEcommerse">
-        <test-method signature="add_Product()[pri:0, instance:ecommerse.AddProductInEcommerse@73e22a3d]" started-at="2024-01-31T16:24:16 IST" name="add_Product" finished-at="2024-01-31T16:24:17 IST" duration-ms="812" status="PASS">
+        </test-method> <!-- create_user -->
+      </class> <!-- book_store_api.Create_user_bookstore -->
+      <class name="book_store_api.AuthorizedUser">
+        <test-method signature="Authorized_user()[pri:0, instance:book_store_api.AuthorizedUser@7fee8714]" started-at="2024-08-03T18:28:13 IST" name="Authorized_user" finished-at="2024-08-03T18:28:35 IST" duration-ms="21952" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- add_Product -->
-      </class> <!-- ecommerse.AddProductInEcommerse -->
-      <class name="ecommerse.DeleteProductApi">
-        <test-method signature="delete_Product()[pri:0, instance:ecommerse.DeleteProductApi@f736069]" started-at="2024-01-31T16:24:17 IST" name="delete_Product" finished-at="2024-01-31T16:24:18 IST" duration-ms="321" status="PASS">
+        </test-method> <!-- Authorized_user -->
+      </class> <!-- book_store_api.AuthorizedUser -->
+      <class name="book_store_api.Delete_Books">
+        <test-method signature="Delete_books()[pri:0, instance:book_store_api.Delete_Books@2b91004a]" started-at="2024-08-03T18:29:19 IST" name="Delete_books" finished-at="2024-08-03T18:29:41 IST" duration-ms="22001" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- delete_Product -->
-      </class> <!-- ecommerse.DeleteProductApi -->
-      <class name="ecommerse.PlaceOrderEcommerse">
-        <test-method signature="PlaceOrder()[pri:0, instance:ecommerse.PlaceOrderEcommerse@47faa49c]" started-at="2024-01-31T16:24:17 IST" name="PlaceOrder" finished-at="2024-01-31T16:24:17 IST" duration-ms="501" status="PASS">
+        </test-method> <!-- Delete_books -->
+      </class> <!-- book_store_api.Delete_Books -->
+      <class name="book_store_api.Get_Details_Of_Books">
+        <test-method signature="Books_Detail()[pri:0, instance:book_store_api.Get_Details_Of_Books@4229bb3f]" started-at="2024-08-03T18:28:35 IST" name="Books_Detail" finished-at="2024-08-03T18:28:57 IST" duration-ms="22160" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PlaceOrder -->
-      </class> <!-- ecommerse.PlaceOrderEcommerse -->
+        </test-method> <!-- Books_Detail -->
+      </class> <!-- book_store_api.Get_Details_Of_Books -->
+      <class name="book_store_api.Added_Books">
+        <test-method signature="Add_Books()[pri:0, instance:book_store_api.Added_Books@56cdfb3b]" started-at="2024-08-03T18:28:57 IST" name="Add_Books" finished-at="2024-08-03T18:29:19 IST" duration-ms="21876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_Books -->
+      </class> <!-- book_store_api.Added_Books -->
+      <class name="book_store_api.DeleteUserAccount">
+        <test-method signature="Delete_User()[pri:0, instance:book_store_api.DeleteUserAccount@20ccf40b]" started-at="2024-08-03T18:29:41 IST" name="Delete_User" finished-at="2024-08-03T18:30:03 IST" duration-ms="21766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Delete_User -->
+      </class> <!-- book_store_api.DeleteUserAccount -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

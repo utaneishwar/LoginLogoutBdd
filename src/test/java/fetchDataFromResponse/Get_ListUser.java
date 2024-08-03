@@ -9,6 +9,9 @@ import io.restassured.response.Response;
 
 public class Get_ListUser 
 {
+	// Which are the dependancy used for automation in API Testing
+	// Rest asssured, testng, jackson annotation, json simple, jackson databinding, 
+	
 	@Test
 	public  void getuser()
 	{

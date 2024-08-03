@@ -19,7 +19,7 @@ public class FetchDataByusingJsonClass
 		// 
 		
 		int pa = jp.getInt("dashboard.purchaseAmount");
-		System.out.println(pa);
+		System.out.println(pa);  //910
 
 		int sum=0;
 
@@ -43,7 +43,7 @@ public class FetchDataByusingJsonClass
 		for(int i=0; i<jp.getInt("courses.size()"); i++)
 		{
 		 String titleofcoursess = jp.getString("courses["+i+"].title");
-			 System.out.print(titleofcoursess+" ,");
+			 System.out.print(titleofcoursess+", ");
 			if(titleofcoursess.equals("Cypress"))
 			{
 				int copiesofcypress = jp.getInt("courses["+i+"].copies");

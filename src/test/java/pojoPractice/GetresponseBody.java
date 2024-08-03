@@ -4,6 +4,12 @@ import java.util.List;
 
 public class GetresponseBody 
 {
+	Integer page;
+    Integer per_page;
+    Integer total;
+    Integer total_pages;
+     List<Data> data;
+     Support1 support;
 	public Integer getPage() {
 		return page;
 	}
@@ -40,10 +46,5 @@ public class GetresponseBody
 	public void setSupport(Support1 support) {
 		this.support = support;
 	}
-	Integer page;
-    Integer per_page;
-    Integer total;
-    Integer total_pages;
-     List<Data> data;
-     Support1 support;
+	
 }

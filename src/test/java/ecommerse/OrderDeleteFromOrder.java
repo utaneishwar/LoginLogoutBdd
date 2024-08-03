@@ -19,7 +19,7 @@ public class OrderDeleteFromOrder extends BaseData
 		Response resp = given()
 						.header("Authorization",tokenid)
 						.header("Content-Type", "application/json")
-						 .pathParam("orderId", ordersID)
+						.pathParam("orderId", ordersID)
 						.when()
 						.delete("/api/ecom/order/delete-order/{orderId}") //")
 						.then()

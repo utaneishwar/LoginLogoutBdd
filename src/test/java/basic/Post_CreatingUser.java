@@ -1,13 +1,16 @@
 package basic;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
 public class Post_CreatingUser
 {
+	 String messagevalue;
 	@Test
 	public void creteUser()
 	{
@@ -32,7 +35,8 @@ public class Post_CreatingUser
 
 		String strResp = resp.asPrettyString();
 		System.out.println(strResp);
-
+		  JsonPath js = resp.jsonPath();
+		   messagevalue = js.getString("message");
 	}
 
 	@Test
@@ -48,8 +52,16 @@ public class Post_CreatingUser
 		
 		String strResp = resp.asPrettyString();
 		System.out.println(strResp);
-
-
+		JsonPath js = resp.jsonPath();
+		  String idvalue = js.getString("id");
+		Assert.assertEquals(messagevalue , idvalue);    // verified
+		 // fetch the data by using json method
+		
+		JsonPath jp =new JsonPath(strResp);
+		System.out.println(jp.getString("firstName"));
+		System.out.println(jp.getString("phone"));
+		System.out.println(jp.getString("email"));
 	}
-
 }
+
+

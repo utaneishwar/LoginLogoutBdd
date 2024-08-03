@@ -4,7 +4,7 @@ import java.util.List;
 
 public class GetResponse {
 	// It is pojo class and we define here deserialization concept by skipping serialization 
-	    // because we dont have need of body so ..
+	    // because we don't have needed of body so ..
 	
 	Integer page;
 	Integer per_page;

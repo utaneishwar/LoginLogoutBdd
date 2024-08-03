@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ecommerse.OrderDeleteFromOrder">
+      <class name="book_store_api.Delete_Books">
         <methods>
-          <include name="deleteOrder"/>
+          <include name="Delete_books"/>
         </methods>
-      </class> <!-- ecommerse.OrderDeleteFromOrder -->
+      </class> <!-- book_store_api.Delete_Books -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

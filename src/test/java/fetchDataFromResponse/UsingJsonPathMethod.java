@@ -15,14 +15,17 @@ public class UsingJsonPathMethod
 	{
 		RestAssured.baseURI="https://petstore.swagger.io/v2/";
 		Response resp = given()
-				.when()
-				.get("/user/Daniel")
-				.then()
-				.extract()
-				.response();
+						.when()
+						.get("/user/Daniel")
+						.then()
+						.extract()
+						.response();
 		String strResp = resp.asPrettyString();
 		System.out.println(strResp);
+		
+		
 		JsonPath jp = resp.jsonPath();
+		
 		String uname = jp.getString("username"); 
 		System.out.println(uname);
 

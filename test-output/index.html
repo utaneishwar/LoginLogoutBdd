@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\intel\eclipse-workspace\JanBatchRestAssured\ecommersetestng.xml</span>
+                    <span>C:\Users\intel\eclipse-workspace\JanBatchRestAssured\BookStoretestng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="ecommerse.OrderDeleteFromOrder" class="method navigator-link" hash-for-method="deleteOrder">deleteOrder</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,22 +103,37 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="ecommerse.PlaceOrderEcommerse" class="method navigator-link" hash-for-method="PlaceOrder">PlaceOrder</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="book_store_api.Added_Books" class="method navigator-link" hash-for-method="Add_Books">Add_Books</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="ecommerse.AddProductInEcommerse" class="method navigator-link" hash-for-method="add_Product">add_Product</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="book_store_api.AuthorizedUser" class="method navigator-link" hash-for-method="Authorized_user">Authorized_user</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="ecommerse.DeleteProductApi" class="method navigator-link" hash-for-method="delete_Product">delete_Product</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="book_store_api.Get_Details_Of_Books" class="method navigator-link" hash-for-method="Books_Detail">Books_Detail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="ecommerse.Login" class="method navigator-link" hash-for-method="logintoApp">logintoApp</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="book_store_api.DeleteUserAccount" class="method navigator-link" hash-for-method="Delete_User">Delete_User</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="book_store_api.Delete_Books" class="method navigator-link" hash-for-method="Delete_books">Delete_books</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="book_store_api.GenerateTokenOfUser" class="method navigator-link" hash-for-method="GenerateToken">GenerateToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="book_store_api.Create_user_bookstore" class="method navigator-link" hash-for-method="create_user">create_user</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -147,47 +148,17 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">ecommerse.OrderDeleteFromOrder</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteOrder">
-                  </a> <!-- deleteOrder -->
-                  <span class="method-name">deleteOrder</span>
-                  <div class="stack-trace">java.lang.IllegalArgumentException: parameterValue cannot be null
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
-	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
-	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
-	at ecommerse.OrderDeleteFromOrder.deleteOrder(OrderDeleteFromOrder.java:22)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">ecommerse.AddProductInEcommerse</span>
+              <span class="class-name">book_store_api.Delete_Books</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="add_Product">
-                  </a> <!-- add_Product -->
-                  <span class="method-name">add_Product</span>
+                  <a name="Delete_books">
+                  </a> <!-- Delete_books -->
+                  <span class="method-name">Delete_books</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -195,14 +166,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">ecommerse.DeleteProductApi</span>
+              <span class="class-name">book_store_api.Added_Books</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="delete_Product">
-                  </a> <!-- delete_Product -->
-                  <span class="method-name">delete_Product</span>
+                  <a name="Add_Books">
+                  </a> <!-- Add_Books -->
+                  <span class="method-name">Add_Books</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -210,14 +181,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">ecommerse.PlaceOrderEcommerse</span>
+              <span class="class-name">book_store_api.GenerateTokenOfUser</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="PlaceOrder">
-                  </a> <!-- PlaceOrder -->
-                  <span class="method-name">PlaceOrder</span>
+                  <a name="GenerateToken">
+                  </a> <!-- GenerateToken -->
+                  <span class="method-name">GenerateToken</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -225,14 +196,59 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">ecommerse.Login</span>
+              <span class="class-name">book_store_api.AuthorizedUser</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="logintoApp">
-                  </a> <!-- logintoApp -->
-                  <span class="method-name">logintoApp</span>
+                  <a name="Authorized_user">
+                  </a> <!-- Authorized_user -->
+                  <span class="method-name">Authorized_user</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">book_store_api.Create_user_bookstore</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="create_user">
+                  </a> <!-- create_user -->
+                  <span class="method-name">create_user</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">book_store_api.DeleteUserAccount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Delete_User">
+                  </a> <!-- Delete_User -->
+                  <span class="method-name">Delete_User</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">book_store_api.Get_Details_Of_Books</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Books_Detail">
+                  </a> <!-- Books_Detail -->
+                  <span class="method-name">Books_Detail</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -240,7 +256,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\intel\eclipse-workspace\JanBatchRestAssured\ecommersetestng.xml</span>
+            <span class="header-content">C:\Users\intel\eclipse-workspace\JanBatchRestAssured\BookStoretestng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -249,11 +265,13 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;ecommerse.Login&quot;/&gt;
-      &lt;class name=&quot;ecommerse.AddProductInEcommerse&quot;/&gt;
-      &lt;class name=&quot;ecommerse.PlaceOrderEcommerse&quot;/&gt;
-      &lt;class name=&quot;ecommerse.OrderDeleteFromOrder&quot;/&gt;
-      &lt;class name=&quot;ecommerse.DeleteProductApi&quot;/&gt;
+      &lt;class name=&quot;book_store_api.Create_user_bookstore&quot;/&gt;
+      &lt;class name=&quot;book_store_api.GenerateTokenOfUser&quot;/&gt;
+      &lt;class name=&quot;book_store_api.AuthorizedUser&quot;/&gt;
+      &lt;class name=&quot;book_store_api.Get_Details_Of_Books&quot;/&gt;
+      &lt;class name=&quot;book_store_api.Added_Books&quot;/&gt;
+      &lt;class name=&quot;book_store_api.Delete_Books&quot;/&gt;
+      &lt;class name=&quot;book_store_api.DeleteUserAccount&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -267,7 +285,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (5 classes)</span>
+                <span class="test-name">Test (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -293,32 +311,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'logintoApp')
-data.setCell(0, 2, 'ecommerse.Login')
-data.setCell(0, 3, 3255);
+data.setCell(0, 1, 'create_user')
+data.setCell(0, 2, 'book_store_api.Create_user_bookstore')
+data.setCell(0, 3, 26489);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'add_Product')
-data.setCell(1, 2, 'ecommerse.AddProductInEcommerse')
-data.setCell(1, 3, 812);
+data.setCell(1, 1, 'GenerateToken')
+data.setCell(1, 2, 'book_store_api.GenerateTokenOfUser')
+data.setCell(1, 3, 22493);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'PlaceOrder')
-data.setCell(2, 2, 'ecommerse.PlaceOrderEcommerse')
-data.setCell(2, 3, 501);
+data.setCell(2, 1, 'Books_Detail')
+data.setCell(2, 2, 'book_store_api.Get_Details_Of_Books')
+data.setCell(2, 3, 22160);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'delete_Product')
-data.setCell(3, 2, 'ecommerse.DeleteProductApi')
-data.setCell(3, 3, 321);
+data.setCell(3, 1, 'Delete_books')
+data.setCell(3, 2, 'book_store_api.Delete_Books')
+data.setCell(3, 3, 22001);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'deleteOrder')
-data.setCell(4, 2, 'ecommerse.OrderDeleteFromOrder')
-data.setCell(4, 3, 9);
+data.setCell(4, 1, 'Authorized_user')
+data.setCell(4, 2, 'book_store_api.AuthorizedUser')
+data.setCell(4, 3, 21952);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Add_Books')
+data.setCell(5, 2, 'book_store_api.Added_Books')
+data.setCell(5, 3, 21876);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Delete_User')
+data.setCell(6, 2, 'book_store_api.DeleteUserAccount')
+data.setCell(6, 3, 21766);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -344,40 +370,52 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">ecommerse.Login</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">book_store_api.Create_user_bookstore</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">logintoApp</span>
+                <span class="method-name">create_user</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">ecommerse.AddProductInEcommerse</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">book_store_api.GenerateTokenOfUser</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">add_Product</span>
-                <span class="method-start">3276 ms</span>
+                <span class="method-name">GenerateToken</span>
+                <span class="method-start">26513 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">ecommerse.PlaceOrderEcommerse</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">book_store_api.AuthorizedUser</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">PlaceOrder</span>
-                <span class="method-start">4092 ms</span>
+                <span class="method-name">Authorized_user</span>
+                <span class="method-start">49009 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">ecommerse.OrderDeleteFromOrder</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">book_store_api.Get_Details_Of_Books</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">deleteOrder</span>
-                <span class="method-start">4601 ms</span>
+                <span class="method-name">Books_Detail</span>
+                <span class="method-start">70964 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">ecommerse.DeleteProductApi</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">book_store_api.Added_Books</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">delete_Product</span>
-                <span class="method-start">4621 ms</span>
+                <span class="method-name">Add_Books</span>
+                <span class="method-start">93127 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store_api.Delete_Books</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Delete_books</span>
+                <span class="method-start">115006 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store_api.DeleteUserAccount</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Delete_User</span>
+                <span class="method-start">137009 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

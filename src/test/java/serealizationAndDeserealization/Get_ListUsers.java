@@ -19,19 +19,19 @@ public class Get_ListUsers {
 	{
 		RestAssured.baseURI = "https://reqres.in/";
 
-		Get_ResponseBody responseBody = given()
+Get_ResponseBody responseBody = given()
 
-				.when()
+								.when()
 
-				.get("/api/users?page=2")
+								.get("/api/users?page=2")
 
-				.then()
+								.then()
 
-				.extract()
+								.extract()
 
-				.response()
+								.response()
 
-				.as(Get_ResponseBody.class);  // concept of serialization 
+								.as(Get_ResponseBody.class);  // concept of De-serialization
 
 		Integer totalvalue = responseBody.getTotal();
 

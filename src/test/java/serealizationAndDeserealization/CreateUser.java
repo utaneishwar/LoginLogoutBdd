@@ -49,7 +49,7 @@ public class CreateUser {
 
 				.as(ResponseBody.class);    // concept of deserialization i.e. converting byte stream into java object
 		// get response in the form of keys and values 
-		// and this variable define inside a response body class so thats why here taken this class
+		// and this variable define inside a ResponseBody class so thats why here taken this class
 
 
 		String messageValue= resbody.getMessage();
